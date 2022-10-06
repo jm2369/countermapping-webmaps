@@ -1,6 +1,6 @@
 # countermapping-webmaps
 
-git clone https://github.com/jm2369/jm2369.github.io
+git clone https://github.com/jm2369/jm2369.github.io/countermapping-webmaps
 
 cd jm2369.github.io
 
