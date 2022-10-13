@@ -62,6 +62,10 @@
             'type':'vector',
             'url':'mapbox://jm2369.a0q6mvx9'
         });
+          map.addSource('housing_layer',{
+            'type':'vector',
+            'url':'mapbox://jm2369.6niws2ly'
+        });
         // add a new layer with your polygons
         map.addLayer({
           'id':'flood_zones',
@@ -70,6 +74,16 @@
           'source-layer':'Sandy_Inundation_Zone-cbz9ei',
           'paint':{
             'fill-color':'#00158f',
+            'fill-opacity': 0.5
+          }
+        });
+        map.addLayer({
+          'id':'public housing development',
+          'type':'fill',
+          'source':'housing_layer',
+          'source-layer':'Map_of_NYCHA_Developments-5ezcaz',
+          'paint':{
+            'fill-color':'#f7665a',
             'fill-opacity': 0.5
           }
         });
