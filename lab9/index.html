@@ -47,25 +47,25 @@
               <input id='affHousing' type='checkbox' name='viz-toggle' checked='checked'>
           </label>
           <label class='check-container'>Co-Op
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#441151'></span>
           </label>
           <label class='check-container'>Shelter
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#883677'></span>
           </label>
           <label class='check-container'>HPD subsized
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#ca61c3'></span>
           </label>
           <label class='check-container'>Mobile Home
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#ee85b5'></span>
           </label>
           <label class='check-container'>Public Housing
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#FF69B4'></span>
           </label>
           <label class='check-container'>Single-Residency Housing
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#ff958c'></span>
           </label>
           <label class='check-container'>Other
-              <span class="legend-key" style='background:#CCC'></span>
+              <span class="legend-key" style='background:#9999a1'></span>
           </label>
 
       <br>
@@ -227,7 +227,8 @@
           'coop', '#441151', 
           'homeless', '#883677', 
           'hpd_sub', '#ca61c3', 
-          'mob_home', '#ee85b5', 
+          'mob_home', '#ee85b5',           
+          'pub_hou', '#FF69B4', 
           'sro', '#ff958c', 
           '#9999a1'],
           'line-opacity': 0.7,
@@ -342,9 +343,9 @@
       checkboxes[i].onclick = switchLayer;
     }
 
-});
+  });
 
-    map.on('mouseenter','affHousing',function(e){
+    map.on('mouseenter', 'affHousing', function(e){
       const coordinates = e.features[0].geometry.coordinates.slice();
         // Here's that function that does the transformation
       function emptyToYesNo(val){
