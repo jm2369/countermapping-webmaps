@@ -355,6 +355,10 @@
       const BBL = e.features[0].properties.BBL;
       const Council = e.features[0].properties.Council;
       const P_2050_1 =emptyToYesNo(e.features[0].properties.P_2050_1); // We apply this function to our value.
+      const P_2050_5 =emptyToYesNo(e.features[0].properties.P_2050_5); // We apply this function to our value.
+      const P_2100_1 =emptyToYesNo(e.features[0].properties.P_2100_1); // We apply this function to our value.
+      const P_2100_5 =emptyToYesNo(e.features[0].properties.P_2100_5); // We apply this function to our value.
+
       /// THERE ARE THREE MORE VARIABLES MISSING!
       /// FILL IN THE REST
 
@@ -367,7 +371,7 @@
 
       popup.setLngLat(coordinates[0][0]).setHTML(description).addTo(map);
 
-    });
+    });   
 
 map.on('mouseleave', 'affHousing', function() {
 map.getCanvas().style.cursor = '';
