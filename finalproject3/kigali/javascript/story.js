@@ -9,7 +9,7 @@ var storyImage =document.getElementById("story-image");
 
 var stories = [
 
-    // layers: ['wei_data', 'ce_data', 'bge_data', 'comm_area', 'landuse', 'gentrification'];
+   // layers: ['site', 'situational', 'informal'];
 
     { title: "Informal Settlements in City of Kigali",
       description: "Rwanda is envisioning to accelerate urbanization to 70%, yet its only urbanization modality is the massive rural-to-urban migration. The unabated influx of poor rural population to urban cores generates informal housings, in which 4-8 people live on a tiny plot without access to electricity and basic services, which deteriorates the urban quality without a proportional increase in investment and employment opportunities. Not only do the informal settlements cause negative externality, but also pose dangers to the impoverished population.",
@@ -23,7 +23,7 @@ var stories = [
      },
     { title: "Situational Factors: Connectivity",
       description: "The situational factors analyze the location of settlement and its connectivity to social and built infrastructure. The informal settlers occupy the affordable and less desirable area informally and becasue the affordable lands can be found in either the edge of the urban boundary in a regularized urban growth models and clusters within the urban boundary, informal settlement lack access to transport and social infrastructure that connects them to the urban fabric. In City of Kigali, the informal settlements were found not only in the urban boundary but in the concetrated urban area as well. However, the connectivity gap for the informal settlement could also be observed in dense urban area.",
-      layer: "situational",
+      layer: 'situational',
       //image: 'assets/images/story/Uphill.png',
       flyTo: {
         zoom: 14.68,
@@ -70,7 +70,7 @@ function updateStory(storyObj) {
     // Update the Storymode content.
     storyHeader.text(title);
     storyContent.text(description);
-    storyImage.innerHTML += '<img src="'+imageSrc+'" style="width:100px;height:auto;" />'; // change the style to adjust the image size.
+    storyImage.innerHTML += '<img src="'+imageSrc+'" style="width:150px;height:auto;" />'; // change the style to adjust the image size.
     // storyImage.append("svg:image")
     //           .attr("xlink:href", image);
     map.flyTo(cameraSettings);

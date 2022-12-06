@@ -85,10 +85,10 @@ function make_invisible(group) {
 map.on('load', () => {
     load_layers();
 
-    const situational = ['access1', 'access2', 'access3', 'road'];
+    const slum = ['informal'];
     array = []
 
-    make_visible(situational, array)
+    make_visible(slum, array)
 
 
 //     Load layers of data
@@ -106,7 +106,7 @@ map.on('load', () => {
 // After the last frame rendered before the map enters an "idle" state.
  map.on('idle', () => {
      // Enumerate ids of the layers.
-    const situational = ['access1', 'access2', 'access3', 'road'];
+    const situational = ['access1', 'access2', 'access3', 'road', 'education', 'health', 'trade'];
     const site = ['water', 'slope'];
     const results_layers = [].concat(situational, site);
     const slum = ['informal']
@@ -134,12 +134,10 @@ map.on('load', () => {
  // });
 
      // If these layers were not added to the map, abort
-     if (!layers_exist(situational) || !layers_exist(site) ) {
+     if (!layers_exist(situational) || !layers_exist(site)) {
          console.log("aborting");
          return;
      }
-
-
 
 
      $(document).ready(function(){
@@ -199,7 +197,7 @@ map.on('load', () => {
 //          const boundaries = map.queryRenderedFeatures(event.point, {
 //          layers: layer_mapping[active_layer]
 //          });
-//
+
 //          console.log("active layer " + active_layer);
 //          value = boundaries[0].properties[property_types[active_layer]]
 //
@@ -209,7 +207,7 @@ map.on('load', () => {
 //              value = Math.floor(value * 100);
 //              value = String(value).concat("%");
 //          }
-//
+
 //          if (active_layer == 'situational') {
 //
 //              if (value == "No Data") {
@@ -219,7 +217,7 @@ map.on('load', () => {
 //             } else {
 //                  document.getElementById('hover').innerHTML = boundaries.length
 //                  ? `<p>There's a <strong><em>${value}</strong></em> chance that two people living in this tract are different races</p>`
-//                  : `<p>Hover over an area!</p>`;
+//                 : `<p>Hover over an area!</p>`;
 //              }
 //          } else if (active_layer == 'site') {
 //
@@ -233,7 +231,7 @@ map.on('load', () => {
 //                  : `<p>Hover over an area!</p>`;
 //              }
 //          }
-//
+
 // });
 
 

@@ -43,40 +43,55 @@ function load_layers() {
       });
     // Results
     // blkgrp_exp
-/*    map.addLayer({
+    map.addLayer({
         id:'education',
-        type:'symbol',
+        type:'circle',
         source:{
             'type':'vector',
             'url':'mapbox://jm2369.075ktki3'
         },
         'source-layer': 'Education-98krso',
+        'paint': {
+        'circle-color':'#ff8882',
+        },
+             'layout': {
+            'visibility': 'none',
+        }
 
 });
 
     map.addLayer({
         id:'health',
-        type:'symbol',
+        type:'circle',
         source:{
             'type':'vector',
             'url':'mapbox://jm2369.cma49xue'
         },
         'source-layer': 'health-2uy1h1',
+        'paint': {
+        'circle-color':'#e4e69b',
+        },
+             'layout': {
+            'visibility': 'none',
+        }   
     });
 
 
     map.addLayer({
         id:'trade',
-        type:'symbol',
+        type:'circle',
         source:{
             'type':'vector',
             'url':'mapbox://jm2369.3qju3t2l'
         },
         'source-layer': 'Tradecentre-4rn07x',
+        'paint': {
+        'circle-color':'#74bdcb',
+        },
+             'layout': {
+            'visibility': 'none',
+        }
     });
-*/
-
-
 
 
     map.addLayer({
@@ -88,21 +103,14 @@ function load_layers() {
         },
       'source-layer': 'Waterbodies-7rb0f5',
           'paint': {
-      'fill-color': [
-               "step",
-                ["get", "objectid"],
-                "#F7D6D0",
-                3,
-                "#F7D6D0",
-                5,
-                "#F7D6D0"
-              ],
-      'fill-opacity': 0.5
+      'fill-color': "#F7D6D0",
+        'fill-opacity': 0.5
     },
-        // 'layout': {
-        //     'visibility': 'none',
-        // }
+        'layout': {
+         'visibility': 'none',
+         }
     });
+
     map.addLayer({
         id:'landslide',
         type:'fill',
