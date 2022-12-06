@@ -33,7 +33,7 @@ var stories = [
       },
     },
     { title: "Site Factors: Exposure to Risks",
-      description: "The National Land Use and Development Master Plan 2020-2050 recommends that lands with the slope of 30-50% can be used for settlements as long as there are no risks from earthquakes, floods, and landslides and that slopes above 55% be planted with trees (MOE, 2020). Mountainous Rwanda is comprised of 22.9% of 30-55% slopes and 12.6% above 55% slopes. Among the 61.6% of Kigali’s population who live in informal settlements, about 9% are located on the steep slope of above 30% while 4% are within flood-prone areas (Murill et. al, 2021).",
+      description: "The National Land Use and Development Master Plan 2020-2050 recommends that lands with the slope of 30-50% can be used for settlements as long as there are no risks from earthquakes, floods (MOE, 2020). Mountainous Rwanda is comprised of 22.9% of 30-55% slopes and 12.6% above 55% slopes. Among the 61.6% of Kigali’s population who live in informal settlements, about 9% are located on the steep slope of above 30% while 4% are within flood-prone areas (Murill et. al, 2021).",
       layer: "site",
       flyTo: {
         zoom: 12,
