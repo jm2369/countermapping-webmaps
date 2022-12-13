@@ -22,9 +22,9 @@ function load_layers() {
                  "match",
                   ["get", "status"],
                   "Paved",
-                  "#f0ead6",
+                  "#BA6821",
                   "Unpaved",
-                  "#b7c8c2",/* other */ '#ccc'
+                  "#FFC90E",/* other */ '#ccc'
                 ],
         'line-width': [
                  "match",
@@ -99,12 +99,12 @@ function load_layers() {
         type:'fill',
         source:{
             'type':'vector',
-            'url':'jm2369.9sqwz8a5'
+            'url':'mapbox://jm2369.9sqwz8a5'
         },
       'source-layer': 'Waterbodies-7rb0f5',
           'paint': {
-      'fill-color': "#F7D6D0",
-        'fill-opacity': 0.5
+      'fill-color': "#00A2E8",
+        'fill-opacity': 1
     },
         'layout': {
          'visibility': 'none',

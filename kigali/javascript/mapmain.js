@@ -106,8 +106,9 @@ map.on('load', () => {
 // After the last frame rendered before the map enters an "idle" state.
  map.on('idle', () => {
      // Enumerate ids of the layers.
+    const river = ['water']
     const situational = ['access1', 'access2', 'access3', 'road', 'education', 'health', 'trade'];
-    const site = ['water', 'slope'];
+    const site = ['slope'];
     const results_layers = [].concat(situational, site);
     const slum = ['informal']
     const flood = ['floodzone']
@@ -124,11 +125,13 @@ map.on('load', () => {
      };
 
      const layer_mapping = {
+        'water': river,
          'site': site,
          'situational': situational,
          'slum': slum,
          'flood': flood,
          'landslide': land,
+
      };
 
  // });
